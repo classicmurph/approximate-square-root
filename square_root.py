@@ -8,13 +8,31 @@
 
 
 
-x = int(input ("Give me a positive number: "))
+# x = int(input ("Give me a positive number: "))
+# y = 0.1
+#
+# while y < (x / 2):
+#     if (y ** 2) <= (x - .01):
+#         y += 0.1
+#     else:
+#         break
+#
+# print("The square root of {} is {}.".format(x, round(y, 3)))
+
+
+# x = input ("Give me number: ")
+# y = (int(x)**0.5)
+# print (y)
+
+
+num = int(input ("I need a positive number: "))
+tolerance = 0.1
 y = 0.1
 
-while y < (x / 2):
-    if (y ** 2) <= (x - .01):
+while y < (num / 2):
+    if y**2 < (num - tolerance):
         y += 0.1
     else:
         break
 
-print("The square root of {} is {}.".format(x, round(y, 3)))
+print("The square root of {} is {}.".format(num, round(y, 3)))
